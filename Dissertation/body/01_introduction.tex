@@ -1,0 +1,38 @@
+\chapter{Introduction}
+\label{ch:introduction}
+\section{Background}
+
+Epidemic diseases have an enormous influence on almost all aspects of society, and billions of people suffer from diverse epidemics every year \cite{zhang2017dynamics}. Therefore, it is crucial for the public to be able to precisely analyze and predict the outbreaks of infectious diseases, and various traditional models have been exploited and performed in diverse aspects \cite{ray2018prediction}. The Centers for Disease Control and Prevention (CDC) uses a surveillant system, which resorts to the outpatient reporting and virological test, and could notice the outbreak with a two-week delay after the disease occurred \cite{shmidt2012using}. However, according to \cite{shmidt2012using}, the disease information from social media could respond more promptly. 
+Since social media platforms provided the public with a communicating platform when emergency events happened, researchers could rely on those messages present in social media to capture the latest information of related events and keep abreast of the situational developments \cite{imran2015processing}. Based on research studies \cite{charles2015using}, social media, including Twitter and Facebook, is regarded as useful tools to detect disease outbreaks with a faster reaction than traditional methods in disease surveillance. 
+
+As one of the most popular social media, Twitter can give users a platform not only to communicate, but also to share information. It is estimated that millions of users publishing health information on Twitter on a daily basis \cite{fernandez2015health}. In a research study about Zika virus (ZIKV), an emerging arbovirus which brought about an epidemic around the world, prediction of the outbreak based on Twitter data shows high accuracy. According to \cite{kagashe2017enhancing}, Twitter data combined with Natural Language Processing (NLP)- based machine learning techniques have been used in medical areas such as medicinal drugs analysis through obtaining the topics and extracting the topics’ trending from tweets. The above investigations show the significant worth of social media to monitor and analyze in the health area. Both cases demonstrate the potential of the social media data that can be exploited in the public health surveillance and prediction domains \cite{masri2019use}. 
+
+Topic models have been regarded as useful tools to analyze document collections and other discrete data \cite{blei2007correlated}. As said in \cite{chemudugunta2006modeling}, probabilistic topic models have been proved useful to extract latent topics in documents and widespread used for dimension-reduction of sparse count data. Those models can abstract the words in a document to a lower-dimensional latent variable representation, which can catch the general meaning of the document beyond the specific words in it \cite{chemudugunta2006modeling}.
+
+
+\section{Motivation}
+During the COVID-19 pandemic, with the same as other mass convergence events occurred, the use of social media soared \cite{qazi2020geocov19}, and in such a conjuncture, the situational information is useful for public to react to the disease epidemic. Consequently, it is vital for researchers to grasp the phasic information and capture the widespread topics from social media during the pandemic. To fill this gap, this research will analyze the potential topics about COVID-19 on Twitter using AI-based Natural Language Processing methods. 
+
+Latent Dirichlet Allocation (LDA) topic model is said to be potent for semantic mining and topic extraction \cite{jelodar2019natural}, and for short texts like tweets, another novel method proposal, referred to as Biterm Topic Model (BTM), is well recognized given its superior performance \cite{cheng2014btm}. In this project, we will have an in-depth study on those two models and propose a new topic model based on BTM, then applied those topic models to social media data about COVID-19 to extract the latent topics of the documents.
+
+
+\section{Description of Work}
+
+Topic modeling is said to be as a method related to multi-component semantic and computational linguistics and has been applied in many research areas. The aim of this project is to implement and improve the topic model to discover and analyze the potential topics about COVID-19. Specifically, we want to find out:
+\begin{enumerate}
+    \item The prevalent topics about COVID-19 in Twitter
+    \item The interrelation among the topics
+    \item The evolution of the topics during the pandemic
+\end{enumerate}
+
+The key objectives are:
+\begin{enumerate}
+    \item Collecting data from Social media
+    \item Data preprocessing
+    \item Designing and training a new topic model and evaluating with traditional topic model
+    \item Using the topic model to capture the topics of the documents
+    \item Result visualization
+\end{enumerate}
+
+To sum up, the work of this project can be divided into two parts, one is having a depth learning about the traditional topics models and design our model, the other is applying our model to analyze COVID-19 related tweets.
+   

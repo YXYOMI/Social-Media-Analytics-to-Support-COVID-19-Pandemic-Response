@@ -1,0 +1,60 @@
+% Overleaf template was first created by Yue Li, June 2017 
+% Modified template was made by Denis Stepanov, June 2020
+
+%initialize format of your paper
+\documentclass[a4paper,12pt,oneside]{report}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3cm]{geometry}
+
+%this is your packages file
+\include{thesis.preamble}
+
+\begin{document}
+\title{Social Media Analytics to Support COVID-19 Pandemic Response}
+
+\author{Xinyi OUYANG}
+% replace line below: \submitdate{\today}
+\submitdate{April 26, 2021}
+\degree{BSc Computer Science}
+\studentid{20030865}
+\supervisor{Dr.Heng YU}
+\thispagestyle{empty}
+\maketitle
+
+\pagestyle{plain}
+
+% pay attention to counter on your pages
+% \setcounter{page}{1}
+
+\setcounter{page}{1} 
+\pagenumbering{roman}
+% \phantomsection
+% % \addcontentsline{toc}{chapter}{Acknowledgments}
+% \input{preface/acknowledgements}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\input{preface/abstract}
+
+% \phantomsection
+% % \addcontentsline{toc}{chapter}{Publications}
+% \input{preface/publications}
+
+% body command is located in thesis.sty. it adds lists of figures, abbreviations and tables. Modify if needed
+\body
+\setcounter{page}{1} 
+\pagenumbering{arabic}
+\setlength{\parskip}{1em}
+
+% include all your "body" files
+\input{body/00_body}
+
+% last, include bibliography
+\bibliographystyle{unsrt}
+\bibliography{bibliography/bibliography}
+
+% appendices, words are not included in word counter
+%TC:ignore 
+\input{appendices/appendix}
+%TC:endignore
+
+\end{document}
